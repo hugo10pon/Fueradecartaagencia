@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuera de Carta | Agencia de Marketing Gastronómico</title>
+    <meta name="description" content="Agencia de marketing digital para restaurantes y hostelería en Valladolid.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-black': '#1a1a1a',
+                        'brand-copper': '#b87333',
+                        'brand-copper-light': '#d4945a',
+                        'brand-dark': '#0f0f0f'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #0f0f0f;
+            background-image: radial-gradient(#b87333 0.5px, transparent 0.5px), radial-gradient(#b87333 0.5px, #0f0f0f 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            background-opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-200 font-sans antialiased">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-brand-dark/95 backdrop-blur-sm border-b border-brand-copper/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <svg class="w-8 h-8 text-brand-copper" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12,2C12,2 9,6.5 9,10C9,11.3 9.4,12.5 10,13.4C9.1,12.8 8.4,11.9 8,10.9C7.8,11.6 7.7,12.3 7.7,13C7.7,16.5 10.4,19.3 13.8,19.7V22H10.2V19.7C10.6,19.8 11.1,19.9 11.5,19.9C15.6,19.9 19,16.6 19,12.5C19,9.4 17.1,6.8 14.4,5.7C14.7,6.6 14.9,7.5 14.9,8.5C14.9,10.6 13.9,12.4 12.3,13.4C12.8,12.4 13.1,11.2 13.1,10C13.1,6.5 12,2 12,2M12,17C11.4,17 11,16.6 11,16C11,15.4 11.4,15 12,15C12.6,15 13,15.4 13,16C13,16.6 12.6,17 12,17Z" />
+                    </svg>
+                    <span class="font-serif text-2xl font-bold text-white tracking-wider">FUERA DE CARTA</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#servicios" class="text-gray-300 hover:text-brand-copper transition-colors">Servicios</a>
+                    <a href="#nosotros" class="text-gray-300 hover:text-brand-copper transition-colors">El Equipo</a>
+                    <a href="#contacto" class="bg-brand-copper hover:bg-brand-copper-light text-white px-5 py-2 rounded-md font-semibold transition-colors">Hablemos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-pattern">
+        <div class="absolute inset-0 bg-brand-dark/80"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-6">
+                Tu restaurante, <span class="text-brand-copper italic">siempre lleno.</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10 font-light">
+                No somos una agencia más. Somos la unión de los fogones y el código. 
+                Entendemos tus problemas porque venimos de la hostelería.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#servicios" class="bg-brand-copper hover:bg-brand-copper-light text-white px-8 py-4 rounded-md font-bold text-lg transition-colors shadow-[0_0_15px_rgba(184,115,51,0.4)]">
+                    Ver nuestros planes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios (Editables) -->
+    <section id="servicios" class="py-24 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-white mb-4">La Carta de Servicios</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Precios claros, sin letra pequeña. Soluciones digitales diseñadas para rentabilizar tu local.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                <!-- Servicio 1: El Pack Despegue -->
+                <div class="bg-brand-black p-8 rounded-xl border border-brand-copper relative overflow-hidden group lg:col-span-3 xl:col-span-1">
+                    <div class="absolute top-0 right-0 bg-brand-copper text-white text-xs font-bold px-3 py-1 rounded-bl-lg">NUESTRO PLATO ESTRELLA</div>
+                    <h3 class="text-2xl font-bold text-brand-copper mb-2">Pack Despegue</h3>
+                    <p class="text-gray-400 text-sm mb-6">Web profesional + Mantenimiento</p>
+                    <p class="text-gray-300 mb-6">Toda la infraestructura digital que tu restaurante necesita para destacar. Se amortiza con un par de reservas al mes.</p>
+                    <div class="mb-6">
+                        <span class="text-gray-500 line-through text-lg mr-2">750€</span>
+                        <span class="text-4xl font-serif text-white font-bold">560€</span> 
+                        <span class="text-sm text-gray-500 font-sans font-normal">/ primer año</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-400 mb-8">
+                        <li class="flex items-start"><span class="text-brand-copper mr-2">✓</span> Diseño Web Premium y Responsivo</li>
+                        <li class="flex items-start"><span class="text-brand-copper mr-2">✓</span> Carta Digital QR Interactivo</li>
+                        <li class="flex items-start"><span class="text-brand-copper mr-2">✓</span> Hosting, Dominio y Copias de Seguridad</li>
+                        <li class="flex items-start"><span class="text-brand-copper mr-2">✓</span> Soporte técnico y cambios de carta</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 2: Redes Sociales -->
+                <div class="bg-brand-black p-8 rounded-xl border border-white/10 hover:border-brand-copper/50 transition-colors">
+                    <h3 class="text-2xl font-bold text-white mb-2">Redes Sociales</h3>
+                    <p class="text-gray-400 text-sm mb-6">Gestión de Instagram y Facebook</p>
+                    <p class="text-gray-300 mb-6">Hacemos que tu comida entre por los ojos. Atraemos público nuevo y fidelizamos a tu clientela.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-serif text-white font-bold">Desde 190€</span> 
+                        <span class="text-sm text-gray-500 font-sans font-normal">/ mes</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start"><span class="text-brand-copper mr-2">✓</span> 2 publicaciones semanales + Historias</li>
+                        <li class="flex items-start"><span class="text-brand-copper mr-2">✓</span> Diseño de feed atractivo</li>
+                        <li class="flex items-start"><span class="text-brand-copper mr-2">✓</span> Estrategia de crecimiento local</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 3: Google Maps -->
+                <div class="bg-brand-black p-8 rounded-xl border border-white/10 hover:border-brand-copper/50 transition-colors">
+                    <h3 class="text-2xl font-bold text-white mb-2">SEO Local en Maps</h3>
+                    <p class="text-gray-400 text-sm mb-6">Posicionamiento y Reseñas</p>
+                    <p class="text-gray-300 mb-6">Si no apareces en el mapa, no existes. Te ponemos primero cuando alguien busca dónde comer en tu zona.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-serif text-white font-bold">79€</span> 
+                        <span class="text-sm text-gray-500 font-sans font-normal">/ mes</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start"><span class="text-brand-copper mr-2">✓</span> Optimización del Perfil de Empresa</li>
+                        <li class="flex items-start"><span class="text-brand-copper mr-2">✓</span> Actualización semanal de novedades</li>
+                        <li class="flex items-start"><span class="text-brand-copper mr-2">✓</span> Gestión y respuesta de reseñas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Servicios Extra (Nuevos) -->
+            <h3 class="text-2xl font-serif font-bold text-white mb-8 text-center">Para subir de nivel</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Fotografía -->
+                <div class="bg-brand-dark p-6 rounded-lg border border-white/5 hover:border-brand-copper/30 transition-colors flex flex-col justify-between">
+                    <div>
+                        <div class="text-3xl mb-3">📸</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Fotografía y Reels</h4>
+                        <p class="text-gray-400 text-sm mb-4">10-15 fotos profesionales de platos y 2 vídeos cortos para redes. Cuidamos el emplatado porque somos hosteleros.</p>
+                    </div>
+                    <div class="text-xl font-bold text-brand-copper">150€ <span class="text-sm text-gray-500 font-normal">/ sesión</span></div>
+                </div>
+                
+                <!-- NFC -->
+                <div class="bg-brand-dark p-6 rounded-lg border border-white/5 hover:border-brand-copper/30 transition-colors flex flex-col justify-between">
+                    <div>
+                        <div class="text-3xl mb-3">⭐</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Placas NFC Reseñas</h4>
+                        <p class="text-gray-400 text-sm mb-4">Lote de 5 placas para las mesas. El cliente acerca el móvil y le lleva directo a dejaros 5 estrellas en Google.</p>
+                    </div>
+                    <div class="text-xl font-bold text-brand-copper">80€ <span class="text-sm text-gray-500 font-normal">/ pack de 5</span></div>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="bg-brand-dark p-6 rounded-lg border border-white/5 hover:border-brand-copper/30 transition-colors flex flex-col justify-between">
+                    <div>
+                        <div class="text-3xl mb-3">💬</div>
+                        <h4 class="text-lg font-bold text-white mb-2">WhatsApp Business</h4>
+                        <p class="text-gray-400 text-sm mb-4">Configuramos un bot automático para enviar la carta y horarios al instante. Que el teléfono no interrumpa un pase.</p>
+                    </div>
+                    <div class="text-xl font-bold text-brand-copper">90€ <span class="text-sm text-gray-500 font-normal">/ pago único</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros / El Equipo -->
+    <section id="nosotros" class="py-20 bg-brand-black border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-serif font-bold text-white mb-6">Quiénes somos</h2>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Fuera de Carta nace de una conversación sincera entre dos mundos que se necesitan: la hostelería y la tecnología. 
+                    </p>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Muchas agencias venden webs genéricas sin entender cómo funciona un restaurante. Nosotros hemos unido el conocimiento desde dentro de los fogones con la capacidad técnica para crear soluciones que de verdad funcionan en el día a día.
+                    </p>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Ficha Pablo -->
+                    <div class="bg-brand-dark p-6 rounded-lg text-center border border-white/10">
+                        <div class="w-20 h-20 bg-brand-copper/20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">🧑‍🍳</div>
+                        <h4 class="text-xl font-bold text-white">Pablo García</h4>
+                        <p class="text-brand-copper font-medium text-sm mb-3">Cocinero & Estrategia Gastro</p>
+                    </div>
+                    <!-- Ficha Hugo -->
+                    <div class="bg-brand-dark p-6 rounded-lg text-center border border-white/10">
+                        <div class="w-20 h-20 bg-brand-copper/20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">💻</div>
+                        <h4 class="text-xl font-bold text-white">Hugo Díez Poncela</h4>
+                        <p class="text-brand-copper font-medium text-sm mb-3">Desarrollador Web Junior</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-24 bg-brand-dark relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-brand-black p-8 md:p-12 rounded-2xl border border-brand-copper/30 shadow-2xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-serif font-bold text-white mb-4">¿Tomamos un café?</h2>
+                    <p class="text-gray-400">Pídenos una visita sin compromiso. Vamos a tu restaurante, analizamos tu situación actual y te proponemos mejoras in situ.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-brand-copper/10 rounded-full flex items-center justify-center text-brand-copper text-xl">📱</div>
+                            <div>
+                                <p class="text-white font-bold">620 931 673 (Hugo)</p>
+                                <p class="text-white font-bold">644 38 17 23 (Pablo)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-brand-copper/10 rounded-full flex items-center justify-center text-brand-copper text-xl">✉️</div>
+                            <div>
+                                <a href="mailto:fueradecartaagencia@gmail.com" class="text-white font-bold hover:text-brand-copper transition-colors">fueradecartaagencia@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Nombre de tu local" class="w-full bg-brand-dark border border-gray-700 rounded-md px-4 py-3 text-white focus:outline-none focus:border-brand-copper">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Tu teléfono" class="w-full bg-brand-dark border border-gray-700 rounded-md px-4 py-3 text-white focus:outline-none focus:border-brand-copper">
+                        </div>
+                        <button type="button" class="w-full bg-brand-copper hover:bg-brand-copper-light text-white font-bold py-3 rounded-md transition-colors">
+                            Solicitar Visita
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
